@@ -1,0 +1,10 @@
+.Modal {
+  border: 1px solid #000;
+  background: #eee;
+  padding: 16px;
+  display: inline-block;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  right: 10%;
+}

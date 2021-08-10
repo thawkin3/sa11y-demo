@@ -1343,7 +1343,7 @@
     graceful-fs "^4.2.4"
     source-map "^0.6.0"
 
-"@jest/test-result@^26.6.0", "@jest/test-result@^26.6.2":
+"@jest/test-result@26.6.2", "@jest/test-result@^26.6.0", "@jest/test-result@^26.6.2":
   version "26.6.2"
   resolved "https://registry.yarnpkg.com/@jest/test-result/-/test-result-26.6.2.tgz#55da58b62df134576cc95476efa5f7949e3f5f18"
   integrity sha512-5O7H5c/7YlojphYNrK02LlDIV2GNPYisKwHm2QTKjNZeEzezCbwYs9swJySv2UfPMyZ0VdsmMv7jIlD/IKYQpQ==
@@ -1464,6 +1464,48 @@
     "@types/estree" "0.0.39"
     estree-walker "^1.0.1"
     picomatch "^2.2.2"
+
+"@sa11y/assert@0.2.8":
+  version "0.2.8"
+  resolved "https://registry.yarnpkg.com/@sa11y/assert/-/assert-0.2.8.tgz#9579449c91c2efbbb6d6aa7286080262ed9ab204"
+  integrity sha512-Yrn6xoZ09nEKMEh/0y5D/6gRyJ3J2PI6uFFxyck98lqqnC58vYJKh4VeVVO4Aj8z+B9IaI9fIkNM+0gQgVlFmg==
+  dependencies:
+    "@sa11y/common" "0.3.5"
+    "@sa11y/format" "0.4.4"
+    "@sa11y/preset-rules" "0.3.7"
+    axe-core "4.3.2"
+
+"@sa11y/common@0.3.5":
+  version "0.3.5"
+  resolved "https://registry.yarnpkg.com/@sa11y/common/-/common-0.3.5.tgz#2109a2277090d4e16f72d84d6c6e47daf62c8249"
+  integrity sha512-Pl2ADy2Dt8UcMHomyhIrDzOULljh6d0KjJFeF34HWybsEHTFAyI7NkkwjWwFTPGau1S0UAfQfnE4lRKqtrfOjw==
+  dependencies:
+    axe-core "4.3.2"
+
+"@sa11y/format@0.4.4":
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/@sa11y/format/-/format-0.4.4.tgz#44d83312523fbd0ba9ee1dea194ee09d6c1e080e"
+  integrity sha512-EdFtrtuWASCQWI2NGUMbaAEF33gBGN7HFsN+89oKTKjVRW6IH8bXuCujtnPfgHq8WMk4P1EeIwHmxAa0kWoGpw==
+  dependencies:
+    axe-core "4.3.2"
+
+"@sa11y/jest@^0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@sa11y/jest/-/jest-0.5.0.tgz#b40eee7d6830e1aaf6c9b9e527b9f48b3fee7f55"
+  integrity sha512-pUxmRYGn4ME6wZuIH6BqPFd6H5OFDcJ7EP2BIeJAzFj8noFdzAPnsDvtcVGZZ8nOgojQv0wwEYgVRpazhcaUKA==
+  dependencies:
+    "@jest/test-result" "26.6.2"
+    "@sa11y/assert" "0.2.8"
+    "@sa11y/format" "0.4.4"
+    "@sa11y/preset-rules" "0.3.7"
+    jest-matcher-utils "26.6.2"
+
+"@sa11y/preset-rules@0.3.7":
+  version "0.3.7"
+  resolved "https://registry.yarnpkg.com/@sa11y/preset-rules/-/preset-rules-0.3.7.tgz#78e2b5928b08a440acdc4f5556bea7f5cabda34a"
+  integrity sha512-lGFX6Sp9JTbsd+qaUj3dK3z9l8fjLe/fTKqqmMwXUloc5q7EKCwbwpuP+ca327ck9ZTkjxQicBq3B4DdOAK7Kw==
+  dependencies:
+    axe-core "4.3.2"
 
 "@sinonjs/commons@^1.7.0":
   version "1.8.2"
@@ -2488,6 +2530,11 @@ aws4@^1.8.0:
   version "1.11.0"
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.11.0.tgz#d61f46d83b2519250e2784daf5b09479a8b41c59"
   integrity sha512-xh1Rl34h6Fi1DC2WWKfxUTVqRsNnr6LsKz2+hfwDxQJWmrx8+c7ylaqBMcHfl1U1r2dsifOvKX3LQuLNZ+XSvA==
+
+axe-core@4.3.2:
+  version "4.3.2"
+  resolved "https://registry.yarnpkg.com/axe-core/-/axe-core-4.3.2.tgz#fcf8777b82c62cfc69c7e9f32c0d2226287680e7"
+  integrity sha512-5LMaDRWm8ZFPAEdzTYmgjjEdj1YnQcpfrVajO/sn/LhbpGp0Y0H64c2hLZI1gRMxfA+w1S71Uc/nHaOXgcCvGg==
 
 axe-core@^4.0.2:
   version "4.1.2"
@@ -4994,6 +5041,20 @@ flush-write-stream@^1.0.0:
     inherits "^2.0.3"
     readable-stream "^2.3.6"
 
+focus-trap-react@^8.7.0:
+  version "8.7.0"
+  resolved "https://registry.yarnpkg.com/focus-trap-react/-/focus-trap-react-8.7.0.tgz#5cf7fceb14561ccbb54208958e63422e1116266d"
+  integrity sha512-zqQKgyYFvd9F1We6WeUZkLo/qGWrZKMGMtOXBz+18gyjg5XIzjz+cX8qdtpUZ2eJdyp/1AdHhcklCN8edyF0Ew==
+  dependencies:
+    focus-trap "^6.6.0"
+
+focus-trap@^6.6.0:
+  version "6.6.0"
+  resolved "https://registry.yarnpkg.com/focus-trap/-/focus-trap-6.6.0.tgz#7fb37679926ec1bd762d0748b056c68a64a9e8cf"
+  integrity sha512-2hWVR3XbBejn5v8wDW9DFzLWXcxMNaSJ/CtE3E+FJjjBCLwIYbZJwjUi2RDBfQPM58gHEt5hck0jrJgHR9/s+A==
+  dependencies:
+    tabbable "^5.2.0"
+
 follow-redirects@^1.0.0:
   version "1.13.2"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.13.2.tgz#dd73c8effc12728ba5cf4259d760ea5fb83e3147"
@@ -6332,7 +6393,7 @@ jest-leak-detector@^26.6.2:
     jest-get-type "^26.3.0"
     pretty-format "^26.6.2"
 
-jest-matcher-utils@^26.6.0, jest-matcher-utils@^26.6.2:
+jest-matcher-utils@26.6.2, jest-matcher-utils@^26.6.0, jest-matcher-utils@^26.6.2:
   version "26.6.2"
   resolved "https://registry.yarnpkg.com/jest-matcher-utils/-/jest-matcher-utils-26.6.2.tgz#8e6fd6e863c8b2d31ac6472eeb237bc595e53e7a"
   integrity sha512-llnc8vQgYcNqDrqRDXWwMr9i7rS5XFiCwvh6DTP7Jqa2mqpcCBBlpCbn+trkG0KNhPu/h8rzyBkriOtBstvWhw==
@@ -10226,6 +10287,11 @@ symbol-tree@^3.2.4:
   version "3.2.4"
   resolved "https://registry.yarnpkg.com/symbol-tree/-/symbol-tree-3.2.4.tgz#430637d248ba77e078883951fb9aa0eed7c63fa2"
   integrity sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==
+
+tabbable@^5.2.0:
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/tabbable/-/tabbable-5.2.0.tgz#4fba60991d8bb89d06e5d9455c92b453acf88fb2"
+  integrity sha512-0uyt8wbP0P3T4rrsfYg/5Rg3cIJ8Shl1RJ54QMqYxm1TLdWqJD1u6+RQjr2Lor3wmfT7JRHkirIwy99ydBsyPg==
 
 table@^6.0.4:
   version "6.0.7"
