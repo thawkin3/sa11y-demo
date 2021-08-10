@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import { Modal } from "./Modal";
+import React, { useState } from 'react'
+import { Modal } from './Modal'
 
 export const ModalExample = () => {
-  const [isModalVisible, setIsModalVisible] = useState(false);
+  const [isModalVisible, setIsModalVisible] = useState(false)
   return (
     <div>
       <h2>Bad Modal Example</h2>
@@ -20,13 +20,13 @@ export const ModalExample = () => {
         sit amet nisl purus in mollis nunc sed. Consequat semper viverra nam
         libero justo laoreet sit amet cursus. A arcu cursus vitae congue mauris
         rhoncus aenean vel elit. Eu tincidunt tortor aliquam nulla facilisi
-        cras. Morbi tincidunt ornare massa eget.{" "}
+        cras. Morbi tincidunt ornare massa eget.{' '}
         <a href="https://www.google.com/">Nam libero</a> justo laoreet sit amet.
       </p>
       <p>
         Tristique senectus et netus et malesuada fames ac turpis. Natoque
         penatibus et magnis dis parturient montes nascetur ridiculus mus.
-        Pretium <a href="https://www.google.com/">vulputate sapien nec</a>{" "}
+        Pretium <a href="https://www.google.com/">vulputate sapien nec</a>{' '}
         sagittis aliquam malesuada bibendum arcu vitae. Nunc sed augue lacus
         viverra vitae. Laoreet non curabitur gravida arcu ac tortor dignissim.
         Ac turpis egestas maecenas pharetra convallis posuere morbi leo. Vitae
@@ -34,7 +34,7 @@ export const ModalExample = () => {
         id. Tincidunt augue interdum velit euismod in pellentesque. Maecenas sed
         enim ut sem viverra aliquet. Ac turpis egestas sed tempus urna et
         pharetra pharetra. Sed libero enim sed faucibus. Sed cras ornare arcu
-        dui. Venenatis urna <a href="https://www.google.com/">cursus eget</a>{" "}
+        dui. Venenatis urna <a href="https://www.google.com/">cursus eget</a>{' '}
         nunc scelerisque viverra mauris. Quam nulla porttitor massa id. Ut
         venenatis tellus in metus vulputate eu scelerisque felis imperdiet.
       </p>
@@ -57,7 +57,7 @@ export const ModalExample = () => {
         morbi leo urna molestie at elementum eu. In est ante in nibh mauris
         cursus mattis molestie a. Augue ut lectus arcu bibendum at varius.
         Turpis egestas pretium aenean pharetra magna ac placerat. Hac habitasse
-        platea <a href="https://www.google.com/">dictumst quisque sagittis</a>{" "}
+        platea <a href="https://www.google.com/">dictumst quisque sagittis</a>{' '}
         purus sit. Facilisi etiam dignissim diam quis enim lobortis. Cursus
         vitae congue mauris rhoncus aenean vel. Et sollicitudin ac orci
         phasellus egestas tellus rutrum tellus. Laoreet sit amet cursus sit amet
@@ -73,7 +73,7 @@ export const ModalExample = () => {
         donec ultrices tincidunt arcu non. Proin fermentum leo vel orci.
         Penatibus et magnis dis parturient montes nascetur ridiculus. Justo nec
         ultrices dui sapien eget mi proin sed libero. Integer eget aliquet nibh
-        praesent tristique magna sit. Semper risus in hendrerit{" "}
+        praesent tristique magna sit. Semper risus in hendrerit{' '}
         <a href="https://www.google.com/">gravida rutrum quisque</a>. Pharetra
         convallis posuere morbi leo urna. Suspendisse interdum consectetur
         libero id faucibus nisl tincidunt. Erat velit scelerisque in dictum non
@@ -87,5 +87,5 @@ export const ModalExample = () => {
         />
       )}
     </div>
-  );
+  )
 }

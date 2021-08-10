@@ -1,27 +1,24 @@
-import React, { useRef, useEffect } from 'react';
-import FocusTrap from 'focus-trap-react';
-import "./Modal.css";
+import React, { useRef, useEffect } from 'react'
+import FocusTrap from 'focus-trap-react'
+import './Modal.css'
 
 export const Modal = ({ closeModal }) => {
-  const buttonRef = useRef(null);
+  const buttonRef = useRef(null)
 
   useEffect(() => {
-    buttonRef.current.focus();
-  }, []);
+    buttonRef.current.focus()
+  }, [])
 
-  const handleEscapeKeyPress = e => {
+  const handleEscapeKeyPress = (e) => {
     if (e.key === 'Escape') {
-      closeModal();
+      closeModal()
     }
-  };
+  }
 
   return (
     <FocusTrap>
       <div>
-        <div
-          className="ModalOverlay"
-          onClick={closeModal}
-        />
+        <div className="ModalOverlay" onClick={closeModal} />
         <div
           className="Modal"
           onKeyDown={handleEscapeKeyPress}
@@ -29,7 +26,12 @@ export const Modal = ({ closeModal }) => {
           role="dialog"
           aria-modal="true"
         >
-          <button ref={buttonRef} onClick={closeModal} className="CloseX" aria-label="Close modal">
+          <button
+            ref={buttonRef}
+            onClick={closeModal}
+            className="CloseX"
+            aria-label="Close modal"
+          >
             X
           </button>
           <h1 id="modalTitle">Modal title here</h1>
@@ -43,5 +45,5 @@ export const Modal = ({ closeModal }) => {
         </div>
       </div>
     </FocusTrap>
-  );
-};
+  )
+}

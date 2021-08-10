@@ -1,5 +1,5 @@
-import React from "react";
-import "./Modal.css";
+import React from 'react'
+import './Modal.css'
 
 export const Modal = ({ closeModal }) => {
   return (
@@ -13,5 +13,5 @@ export const Modal = ({ closeModal }) => {
       <p>Modal content here</p>
       <button onClick={closeModal}>Close</button>
     </div>
-  );
-};
+  )
+}

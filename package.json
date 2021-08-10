@@ -4,8 +4,10 @@
   "private": true,
   "description": "Demo of Salesforce Accessibility Automation Libraries using React, Jest, and @sa11y/jest",
   "scripts": {
-    "start": "node scripts/start.js",
     "build": "node scripts/build.js",
+    "format": "prettier --write .",
+    "format-watch": "onchange . -- prettier --write {{changed}}",
+    "start": "node scripts/start.js",
     "test": "node scripts/test.js"
   },
   "eslintConfig": {
@@ -128,6 +130,7 @@
     "jest-resolve": "26.6.0",
     "jest-watch-typeahead": "0.6.1",
     "mini-css-extract-plugin": "0.11.3",
+    "onchange": "^7.1.0",
     "optimize-css-assets-webpack-plugin": "5.0.4",
     "pnp-webpack-plugin": "1.6.4",
     "postcss-flexbugs-fixes": "4.2.1",
@@ -135,6 +138,7 @@
     "postcss-normalize": "8.0.1",
     "postcss-preset-env": "6.7.0",
     "postcss-safe-parser": "5.0.2",
+    "prettier": "^2.3.2",
     "prompts": "2.4.0",
     "react-app-polyfill": "^2.0.0",
     "react-dev-utils": "^11.0.3",

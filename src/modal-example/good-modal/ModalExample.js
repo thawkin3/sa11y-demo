@@ -1,15 +1,15 @@
-import React, { useState, useRef } from 'react';
-import { Modal } from './Modal';
+import React, { useState, useRef } from 'react'
+import { Modal } from './Modal'
 
 export const ModalExample = () => {
-  const [isModalVisible, setIsModalVisible] = useState(false);
-  const openModalButtonRef = useRef(null);
+  const [isModalVisible, setIsModalVisible] = useState(false)
+  const openModalButtonRef = useRef(null)
 
   return (
     <div>
       <h2>Good Modal Example</h2>
       <button
-        onClick={() => setIsModalVisible(isModalVisible => !isModalVisible)}
+        onClick={() => setIsModalVisible((isModalVisible) => !isModalVisible)}
         ref={openModalButtonRef}
       >
         Open modal
@@ -85,11 +85,11 @@ export const ModalExample = () => {
       {isModalVisible && (
         <Modal
           closeModal={() => {
-            setIsModalVisible(isModalVisible => !isModalVisible);
-            openModalButtonRef.current.focus();
+            setIsModalVisible((isModalVisible) => !isModalVisible)
+            openModalButtonRef.current.focus()
           }}
         />
       )}
     </div>
-  );
+  )
 }

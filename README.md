@@ -2,7 +2,6 @@
 
 Demo of Salesforce Accessibility Automation Libraries using React, Jest, and `@sa11y/jest`
 
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and then promptly ejected using `yarn eject`.
 
 ## Available scripts

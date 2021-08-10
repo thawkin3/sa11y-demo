@@ -1,7 +1,7 @@
-import React from 'react';
-import { ModalExample as BadModalExample } from './modal-example/bad-modal/ModalExample';
-import { ModalExample as GoodModalExample } from './modal-example/good-modal/ModalExample';
-import "./App.css";
+import React from 'react'
+import { ModalExample as BadModalExample } from './modal-example/bad-modal/ModalExample'
+import { ModalExample as GoodModalExample } from './modal-example/good-modal/ModalExample'
+import './App.css'
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <hr />
       <GoodModalExample />
     </main>
-  );
+  )
 }
 
-export default App;
+export default App
