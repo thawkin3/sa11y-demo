@@ -17,7 +17,7 @@ describe('ModalExample', () => {
     ${'base'}    | ${base}
     ${'full'}    | ${full}
   `(
-    'accessibility check using $presetName preset',
+    'accessibility check using @sa11y/jest $presetName preset',
     ({ presetName, preset }) => {
       // Passes
       it('is accessible when the modal is closed', async () => {

@@ -25,15 +25,13 @@ describe('ButtonExample', () => {
     ${'base'}    | ${base}
     ${'full'}    | ${full}
   `(
-    'accessibility check using $presetName preset',
+    'accessibility check using @sa11y/jest $presetName preset',
     ({ presetName, preset }) => {
       // Passes
-      it('is accessible for the entire example', async () => {
+      it('is accessible', async () => {
         const { container } = render(<ButtonExample />)
-        const Button = document.getElementsByClassName('goodButton')[0]
 
         await expect(container).toBeAccessible(preset)
-        await expect(Button).toBeAccessible(preset)
       })
     }
   )

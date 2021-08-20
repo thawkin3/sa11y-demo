@@ -26,3 +26,4 @@ In the project directory, you can run:
 - All sa11y packages: https://github.com/salesforce/sa11y#jest-integration
 - Jest sa11y package: https://github.com/salesforce/sa11y/blob/master/packages/jest/README.md
 - Create React App: https://github.com/facebook/create-react-app
+- jest-axe package: https://www.npmjs.com/package/jest-axe
