@@ -2,3 +2,44 @@
   font-family: sans-serif;
   text-align: center;
 }
+
+.styledButton {
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  font-family: inherit;
+  font-weight: normal;
+  border: none;
+  border-radius: 0.5rem;
+  background: #216869;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  max-width: 18rem;
+  word-break: break-word;
+  word-wrap: break-word;
+  transition: all 0.5s;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.styledButton:focus,
+.styledButton:hover {
+  outline: none;
+}
+
+.styledButton:focus::before,
+.styledButton:hover::before {
+  box-shadow: #216869 0 0 0 0.0625rem;
+  content: '';
+  height: calc(100% + 0.25rem);
+  left: 0;
+  margin-left: -0.25rem;
+  margin-top: -0.25rem;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: calc(100% + 0.25rem);
+  border-radius: inherit;
+  padding: 0.125rem;
+}
