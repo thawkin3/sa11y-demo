@@ -9,6 +9,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 In the project directory, you can run:
 
 - `yarn build`: builds the app for production usage
+- `yarn format`: formats the code using Prettier
+- `yarn format-watch`: runs Prettier in watch mode
 - `yarn start`: starts the app in development mode
 - `yarn test`: runs the tests using Jest
 
