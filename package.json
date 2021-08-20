@@ -2,6 +2,7 @@
   "name": "sa11y-demo",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://tylerhawkins.info/sa11y-demo/build/",
   "description": "Demo of Salesforce Accessibility Automation Libraries using React, Jest, and @sa11y/jest",
   "scripts": {
     "build": "node scripts/build.js",
