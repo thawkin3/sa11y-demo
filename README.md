@@ -8,7 +8,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 You can view the demo app locally on your machine by running `yarn start`. In the demo app you'll see a few examples of accessible and non-accessible content.
 
-You can run the tests locally on your machine by running `yarn test`. If you look at any of the `.test.js` files in the project, you'll see that it calls the `.toBeAccessible` custom Jest matcher on each of the components. If `@sa11y/jest` finds any a11y violations, they will be displayed in your terminal.
+You can run the tests locally on your machine by running `yarn test`. If you look at any of the `.test.js` files in the project, you'll see that we call the `.toBeAccessible()` custom Jest matcher on each of the components. If `@sa11y/jest` finds any a11y violations, they will be displayed in your terminal.
 
 ## Available scripts
 
