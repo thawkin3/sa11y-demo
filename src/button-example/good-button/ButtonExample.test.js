@@ -1,6 +1,7 @@
 import React from 'react'
 import { render, screen, fireEvent } from '@testing-library/react'
 import { base, full } from '@sa11y/preset-rules'
+import { axe } from 'jest-axe'
 import { ButtonExample } from './ButtonExample'
 
 describe('ButtonExample', () => {
@@ -36,4 +37,10 @@ describe('ButtonExample', () => {
       })
     }
   )
+
+  it('reports no a11y violations from jest-axe', async () => {
+    const { container } = render(<ButtonExample />)
+
+    expect(await axe(container)).toHaveNoViolations()
+  })
 })
