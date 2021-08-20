@@ -6,7 +6,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Exploring the demo
 
-You can view the demo app locally on your machine by running `yarn start`. In the demo app you'll see a few examples of accessible and non-accessible content. These examples include buttons, images, and modals.
+The demo app is hosted here: http://tylerhawkins.info/sa11y-demo/build/
+
+You can also view the demo app locally on your machine by running `yarn start`. In the demo app you'll see a few examples of accessible and non-accessible content. These examples include buttons, images, and modals.
 
 You can run the tests locally on your machine by running `yarn test`. If you look at any of the `.test.js` files in the project, you'll see that we call the `.toBeAccessible()` custom Jest matcher on each of the components. If `@sa11y/jest` or `jest-axe` find any a11y violations, they will be displayed in your terminal.
 
